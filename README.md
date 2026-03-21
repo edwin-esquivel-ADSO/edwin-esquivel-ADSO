@@ -17,7 +17,7 @@ CODE_ORGANIZATION: https://github.com/edwin-esquivel-ADSO/ADSO-3413974
 
 ## 🧑 Sobre mí
 - 🎂 Edad: 17 años  
-- 📍 Ciudad: Tello, Huila   
+- 📍 Municipio: Tello, Huila   
 - 💬 Descripción: Soy una persona responsable, creativa y con interés en la tecnología y el aprendizaje continuo.
 
 ---
