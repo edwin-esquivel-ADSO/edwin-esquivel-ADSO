@@ -12,3 +12,71 @@ CODE_ORGANIZATION: https://github.com/edwin-esquivel-ADSO/ADSO-3413974
 </p>
 
 <h1 align="center">ADSO-3413974</h1>
+
+# 👋 Hola, soy Edwin Esquivel
+
+## 🧑 Sobre mí
+- 🎂 Edad: 17 años  
+- 📍 Ciudad: Tello, Huila   
+- 💬 Descripción: Soy una persona responsable, creativa y con interés en la tecnología y el aprendizaje continuo.
+
+---
+
+## 🎯 Mis intereses
+- 💻 Tecnología  
+- 🎮 Videojuegos  
+- 🎵 Música  
+- 🎬 Películas y series  
+- 📚 Leer  
+
+---
+
+## 🎵 Música favorita
+- Artista/Banda: Yeison Jimenez 
+- Género: Musica popular
+- Canción favorita: Ya se acabo 
+
+---
+
+## 🎬 Películas o series favoritas
+1. Spiderman   
+2. Harry potter   
+3. Lucifer
+4. La primera vez   
+
+---
+
+## 🎮 Videojuegos favoritos
+- 🎯 Free fire  
+- 🕹️ DLS26 
+- 👾 8 Ball Pool 
+
+---
+
+## 🍕 Comida favorita
+- 🍔 Hamburguesa  
+- 🍕 Pizza  
+- 🍣 Sushi  
+
+---
+
+## 🌈 Hobbies
+- ✍️ Programar  
+- 🏃 Hacer ejercicio  
+- 🎨 Diseñar  
+
+---
+
+## 🚀 Metas o sueños
+- 🌟 Ser desarrollador profesional  
+- 🌟 Tener estabilidad económica  
+- 🌟 Crear mis propios proyectos tecnológicos  
+
+---
+
+## 📫 Contacto
+- 📧 Email: esquivel20214@gmail.com
+
+---
+
+✨ *Gracias por ver mi presentación* ✨
