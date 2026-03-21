@@ -34,7 +34,7 @@ CODE_ORGANIZATION: https://github.com/edwin-esquivel-ADSO/ADSO-3413974
 ## 🎵 Música favorita
 - Artista/Banda: Yeison Jimenez 
 - Género: Musica popular
-- Canción favorita: Ya se acabo 
+- Canción favorita: Se acabó 
 
 ---
 
