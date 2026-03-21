@@ -1,16 +1,14 @@
-## Hi there 👋
-
 <!--
-**edwin-esquivel-ADSO/edwin-esquivel-ADSO** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+CONFIG
+FULL_NAME: Edwin Alejandro Esquivel Bahamon 
+GITHUB_USER: edwin-esquivel-ADSO
+EMAIL: esquivel202414@gmail.com
+CODE_ORGANIZATION: https://github.com/edwin-esquivel-ADSO/ADSO-3413974
 -->
+<h1 align="center">Edwin Alejandro Esquivel Bahamon</h1>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=edwin-esquivel-ADSO&label=Profile%20views&style=flat-square&color=brightgreen" alt="Profile views">
+</p>
+
+<h1 align="center">ADSO-3413974</h1>
