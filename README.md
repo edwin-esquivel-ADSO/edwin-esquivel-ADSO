@@ -56,7 +56,6 @@ CODE_ORGANIZATION: code-sena
 ## 🍕 Comida favorita
 - 🍔 Hamburguesa  
 - 🍕 Pizza  
-- 🍣 Sushi  
 
 ---
 
