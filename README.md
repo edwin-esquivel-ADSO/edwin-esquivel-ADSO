@@ -1,3 +1,10 @@
+<!--
+CONFIG
+FULL_NAME: Edwin Alejandro Esquivel Bahamon
+GITHUB_USER: edwin-esquivel-ADSO
+EMAIL: esquivel202414@gmail.com
+CODE_ORGANIZATION: code-sena
+-->
 # 🧑‍💻 Alejo | Stack :
 👋 ¡Hola! Soy Edwin Esquivel, un desarrollador de software full-stack apasionado por la creación de soluciones tecnológicas. Actualmente me formo en Análisis y Desarrollo de Software (ADSO), trabajando en proyectos web y móviles con tecnologías como JavaScript, TypeScript, PHP y bases de datos. Cuando no estoy estructurando código o explorando sobre inteligencia artificial, disfruto del diseño, la buena música y hacer rutas en bicicleta. Mi gran meta es consolidarme como ingeniero de software y dar vida a mis propios proyectos.
 
