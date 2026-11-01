@@ -12,7 +12,7 @@
   </defs>
 
   <style>
-    @keyframes switchVisual {
+    @keyframes switchTech {
       0%, 45% { opacity: 1; transform: scale(1); }
       48%, 95% { opacity: 0; transform: scale(0.96); }
       98%, 100% { opacity: 1; transform: scale(1); }
@@ -22,7 +22,7 @@
       48%, 95% { opacity: 1; transform: scale(1); }
       98%, 100% { opacity: 0; transform: scale(0.96); }
     }
-    @keyframes switchTagDev {
+    @keyframes switchTagTech {
       0%, 45% { opacity: 1; }
       48%, 95% { opacity: 0; }
       98%, 100% { opacity: 1; }
@@ -40,16 +40,20 @@
       0% { transform: translateY(-394px); }
       100% { transform: translateY(394px); }
     }
-    .dev-avatar {
-      animation: switchVisual 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    @keyframes pulseRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .tech-core {
+      animation: switchTech 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       transform-origin: 221px 260px;
     }
     .linux-tux {
       animation: switchTux 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       transform-origin: 221px 260px;
     }
-    .tag-dev {
-      animation: switchTagDev 8s ease infinite;
+    .tag-tech {
+      animation: switchTagTech 8s ease infinite;
     }
     .tag-linux {
       animation: switchTagLinux 8s ease infinite;
@@ -59,6 +63,10 @@
     }
     .scanline {
       animation: scanlineAnim 4s linear infinite;
+    }
+    .rot-ring {
+      animation: pulseRing 20s linear infinite;
+      transform-origin: 221px 255px;
     }
   </style>
 
@@ -75,68 +83,59 @@
   <circle cx="80" cy="35" r="6.5" fill="#27C93F"/>
   <text x="540" y="40" text-anchor="middle" fill="#57606A" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="0.5">alejo@stack: ~/profile.yaml (vim)</text>
 
-  <!-- LEFT PANE: VISUAL / DYNAMIC CORE -->
+  <!-- LEFT PANE: DYNAMIC TECH ENGINE & LINUX TUX -->
   <g clip-path="url(#leftClip)">
     <rect x="36" y="80" width="370" height="394" rx="8" fill="#F0F3F6" stroke="#D0D7DE" stroke-width="1"/>
     <rect x="36" y="80" width="370" height="394" fill="url(#grid)"/>
 
     <!-- Header info in left pane -->
     <path d="M 36 116 L 406 116" stroke="#D0D7DE" stroke-width="1"/>
-    <text x="50" y="103" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1">SYSTEM.VISUAL // CORE</text>
-    <text x="390" y="103" text-anchor="end" fill="#57606A" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">SYS_ID: 3413974</text>
+    <text x="50" y="103" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1">SYSTEM.VISUAL // ENGINE</text>
+    <text x="390" y="103" text-anchor="end" fill="#57606A" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">FICHA: 3413974</text>
 
     <!-- Scanning line effect -->
     <line x1="36" y1="80" x2="406" y2="80" stroke="#0969DA" stroke-width="1.5" opacity="0.4" class="scanline"/>
 
-    <!-- VISUAL 1: DEVELOPER FACE / AVATAR WITH HEADPHONES & TECH GEAR -->
-    <g class="dev-avatar">
-      <!-- Glow Circle Background -->
-      <circle cx="221" cy="255" r="88" fill="#0969DA" opacity="0.05"/>
-      <circle cx="221" cy="255" r="76" fill="none" stroke="#0969DA" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+    <!-- VISUAL 1: PURE TECH & CODE ENGINE (TYPESCRIPT / REACT / CODE BADGE) -->
+    <g class="tech-core">
+      <!-- Glow & Outer Orbiting Rings -->
+      <circle cx="221" cy="255" r="95" fill="#0969DA" opacity="0.04"/>
+      <circle cx="221" cy="255" r="82" fill="none" stroke="#0969DA" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.45" class="rot-ring"/>
+      <circle cx="221" cy="255" r="72" fill="none" stroke="#4F46E5" stroke-width="1" opacity="0.3"/>
 
-      <!-- Headphones Band -->
-      <path d="M 175 235 C 175 180, 267 180, 267 235" fill="none" stroke="#CF222E" stroke-width="6" stroke-linecap="round"/>
-      <rect x="168" y="222" width="14" height="32" rx="6" fill="#CF222E"/>
-      <rect x="260" y="222" width="14" height="32" rx="6" fill="#CF222E"/>
+      <!-- Glowing Hexagon Badge for TypeScript/Code Core -->
+      <polygon points="221,175 285,212 285,288 221,325 157,288 157,212" fill="#E8EEF5" stroke="#0969DA" stroke-width="2.5"/>
+      <polygon points="221,185 275,217 275,283 221,315 167,283 167,217" fill="none" stroke="#4F46E5" stroke-width="1" opacity="0.4"/>
 
-      <!-- Hair & Head Base -->
-      <path d="M 188 238 C 188 195, 254 195, 254 238 C 254 265, 235 285, 221 288 C 207 285, 188 265, 188 238 Z" fill="#E2E8F0" stroke="#0969DA" stroke-width="2"/>
-      
-      <!-- Modern Hair Cut -->
-      <path d="M 186 225 C 195 200, 235 190, 256 210 C 250 200, 232 195, 215 198 C 198 202, 190 215, 186 225 Z" fill="#0969DA"/>
+      <!-- Central Code & TypeScript Emblem -->
+      <!-- < / > Bracket Accents -->
+      <path d="M 188 238 L 176 255 L 188 272" fill="none" stroke="#0969DA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 254 238 L 266 255 L 254 272" fill="none" stroke="#0969DA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="228" y1="235" x2="214" y2="275" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
 
-      <!-- Glasses / Smart Visor -->
-      <rect x="193" y="230" width="23" height="15" rx="3" fill="#0969DA" opacity="0.25" stroke="#0969DA" stroke-width="1.5"/>
-      <rect x="226" y="230" width="23" height="15" rx="3" fill="#0969DA" opacity="0.25" stroke="#0969DA" stroke-width="1.5"/>
-      <line x1="216" y1="237" x2="226" y2="237" stroke="#0969DA" stroke-width="1.5"/>
-      <!-- Eyes / Glint -->
-      <circle cx="204" cy="237" r="2.5" fill="#FFFFFF"/>
-      <circle cx="237" cy="237" r="2.5" fill="#FFFFFF"/>
+      <!-- Bold { TS } Tech Monogram -->
+      <text x="221" y="263" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="22" font-weight="900" letter-spacing="1">TS</text>
 
-      <!-- Smile / Confidence -->
-      <path d="M 213 262 Q 221 268 229 262" fill="none" stroke="#0969DA" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Corner Circuit Nodes -->
+      <circle cx="157" cy="212" r="4.5" fill="#0969DA"/>
+      <circle cx="285" cy="212" r="4.5" fill="#4F46E5"/>
+      <circle cx="221" cy="325" r="4.5" fill="#0969DA"/>
+      <circle cx="221" cy="175" r="4.5" fill="#4F46E5"/>
 
-      <!-- Developer Hoodie / Shoulders -->
-      <path d="M 172 320 C 172 295, 195 288, 221 288 C 247 288, 270 295, 270 320 Z" fill="#D0D7DE" stroke="#0969DA" stroke-width="2"/>
-      <path d="M 207 288 L 221 315 L 235 288" fill="none" stroke="#CF222E" stroke-width="1.5"/>
-
-      <!-- Orbiting Tech Nodes -->
-      <circle cx="160" cy="205" r="4" fill="#0969DA"/>
-      <line x1="160" y1="205" x2="185" y2="220" stroke="#0969DA" stroke-width="1" stroke-dasharray="2 2" opacity="0.6"/>
-      <circle cx="282" cy="205" r="4" fill="#CF222E"/>
-      <line x1="282" y1="205" x2="257" y2="220" stroke="#CF222E" stroke-width="1" stroke-dasharray="2 2" opacity="0.6"/>
+      <!-- Sub-label inside hexagon -->
+      <text x="221" y="303" text-anchor="middle" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9.5" font-weight="700" letter-spacing="1.5">FULL_STACK</text>
     </g>
 
     <!-- VISUAL 2: ICONIC LINUX TUX (PENGUIN) -->
     <g class="linux-tux">
       <!-- Glow Circle Background -->
-      <circle cx="221" cy="255" r="88" fill="#9A6700" opacity="0.05"/>
-      <circle cx="221" cy="255" r="76" fill="none" stroke="#9A6700" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+      <circle cx="221" cy="255" r="90" fill="#D97706" opacity="0.05"/>
+      <circle cx="221" cy="255" r="76" fill="none" stroke="#D97706" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
 
-      <!-- Tux Body (Black/Dark outer) -->
+      <!-- Tux Body -->
       <path d="M 221 190 C 200 190, 185 208, 188 238 C 182 250, 172 278, 172 300 C 172 320, 190 324, 221 324 C 252 324, 270 320, 270 300 C 270 278, 260 250, 254 238 C 257 208, 242 190, 221 190 Z" fill="#1F2937" stroke="#0284C7" stroke-width="2"/>
 
-      <!-- Tux Belly (White / Cream) -->
+      <!-- Tux Belly -->
       <path d="M 221 230 C 204 230, 194 250, 194 278 C 194 306, 206 318, 221 318 C 236 318, 248 306, 248 278 C 248 250, 238 230, 221 230 Z" fill="#F8FAFC"/>
 
       <!-- Tux Eyes -->
@@ -145,14 +144,14 @@
       <circle cx="213" cy="214" r="2.5" fill="#0F172A"/>
       <circle cx="229" cy="214" r="2.5" fill="#0F172A"/>
 
-      <!-- Tux Beak (Yellow/Orange) -->
+      <!-- Tux Beak -->
       <path d="M 210 223 C 210 223, 221 235, 232 223 C 230 231, 225 236, 221 236 C 217 236, 212 231, 210 223 Z" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
 
       <!-- Tux Flippers (Wings) -->
       <path d="M 186 250 C 174 260, 166 280, 168 296 C 172 298, 178 288, 184 275 Z" fill="#1F2937" stroke="#0284C7" stroke-width="1.5"/>
       <path d="M 256 250 C 268 260, 276 280, 274 296 C 270 298, 264 288, 258 275 Z" fill="#1F2937" stroke="#0284C7" stroke-width="1.5"/>
 
-      <!-- Tux Feet (Orange) -->
+      <!-- Tux Feet -->
       <ellipse cx="196" cy="323" rx="15" ry="7" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
       <ellipse cx="246" cy="323" rx="15" ry="7" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
     </g>
@@ -160,12 +159,12 @@
     <!-- Bottom Status in Left Box -->
     <path d="M 36 438 L 406 438" stroke="#D0D7DE" stroke-width="1"/>
     <!-- Animated labels for status -->
-    <g class="tag-dev">
-      <text x="50" y="458" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">● IDENTITY: FULL_STACK_DEV</text>
+    <g class="tag-tech">
+      <text x="50" y="458" fill="#0969DA" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">● ENGINE: TYPESCRIPT // REACT</text>
       <text x="390" y="458" text-anchor="end" fill="#57606A" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">ALEJO | STACK</text>
     </g>
     <g class="tag-linux">
-      <text x="50" y="458" fill="#9A6700" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">◆ SYSTEM: LINUX_KERNEL_x64</text>
+      <text x="50" y="458" fill="#D97706" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">◆ SYSTEM: LINUX_KERNEL_x64</text>
       <text x="390" y="458" text-anchor="end" fill="#57606A" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">OPEN_SOURCE</text>
     </g>
   </g>
@@ -181,27 +180,27 @@
 
       <!-- Line 2 -->
       <text x="0" y="46" fill="#8C959F" text-anchor="end">2</text>
-      <text x="34" y="46"><tspan fill="#CF222E">subject:</tspan> <tspan fill="#24292F" font-weight="600">"Edwin Alejandro Esquivel"</tspan></text>
+      <text x="34" y="46"><tspan fill="#4F46E5">subject:</tspan> <tspan fill="#24292F" font-weight="600">"Edwin Alejandro Esquivel"</tspan></text>
 
       <!-- Line 3 -->
       <text x="0" y="68" fill="#8C959F" text-anchor="end">3</text>
-      <text x="34" y="68"><tspan fill="#CF222E">alias:</tspan> <tspan fill="#24292F">"Alejo | Stack"</tspan></text>
+      <text x="34" y="68"><tspan fill="#4F46E5">alias:</tspan> <tspan fill="#24292F">"Alejo | Stack"</tspan></text>
 
       <!-- Line 4 -->
       <text x="0" y="90" fill="#8C959F" text-anchor="end">4</text>
-      <text x="34" y="90"><tspan fill="#CF222E">role:</tspan> <tspan fill="#116329" font-weight="600">"Full-Stack Software Developer"</tspan></text>
+      <text x="34" y="90"><tspan fill="#4F46E5">role:</tspan> <tspan fill="#116329" font-weight="600">"Full-Stack Software Developer"</tspan></text>
 
       <!-- Line 5 -->
       <text x="0" y="112" fill="#8C959F" text-anchor="end">5</text>
-      <text x="34" y="112"><tspan fill="#CF222E">education:</tspan> <tspan fill="#24292F">"SENA ADSO · Ficha 3413974"</tspan></text>
+      <text x="34" y="112"><tspan fill="#4F46E5">education:</tspan> <tspan fill="#24292F">"SENA ADSO · Ficha 3413974"</tspan></text>
 
       <!-- Line 6 -->
       <text x="0" y="134" fill="#8C959F" text-anchor="end">6</text>
-      <text x="34" y="134"><tspan fill="#CF222E">location:</tspan> <tspan fill="#24292F">"Neiva, Huila · Colombia 🇨🇴"</tspan></text>
+      <text x="34" y="134"><tspan fill="#4F46E5">location:</tspan> <tspan fill="#24292F">"Neiva, Huila · Colombia 🇨🇴"</tspan></text>
 
       <!-- Line 7 -->
       <text x="0" y="156" fill="#8C959F" text-anchor="end">7</text>
-      <text x="34" y="156"><tspan fill="#CF222E">mission:</tspan> <tspan fill="#116329">"Transformar ideas en soluciones escalables"</tspan></text>
+      <text x="34" y="156"><tspan fill="#4F46E5">focus:</tspan> <tspan fill="#116329">"Desarrollo Full-Stack · Hackathones · Innovación"</tspan></text>
 
       <!-- Line 8 -->
       <text x="0" y="178" fill="#8C959F" text-anchor="end">8</text>
@@ -236,7 +235,7 @@
 
       <!-- Line 16 -->
       <text x="0" y="354" fill="#8C959F" text-anchor="end">16</text>
-      <text x="34" y="354"><tspan fill="#9A6700">featured:</tspan> <tspan fill="#24292F">[MercaGo, Asistencia-SENA, TrazaCao]</tspan><tspan fill="#0969DA" class="cursor"> █</tspan></text>
+      <text x="34" y="354"><tspan fill="#D97706">featured:</tspan> <tspan fill="#24292F">[ViaNova IA, CopyCaess.com]</tspan><tspan fill="#0969DA" class="cursor"> █</tspan></text>
 
     </g>
 
