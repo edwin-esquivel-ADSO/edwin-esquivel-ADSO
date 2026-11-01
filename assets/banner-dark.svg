@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" width="1080" height="520" role="img" aria-label="Edwin Esquivel Terminal Profile">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 240, 255, 0.05)" stroke-width="1"/>
+    </pattern>
+    <clipPath id="leftClip">
+      <rect x="36" y="80" width="370" height="394" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes switchVisual {
+      0%, 45% { opacity: 1; transform: scale(1); }
+      48%, 95% { opacity: 0; transform: scale(0.96); }
+      98%, 100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes switchTux {
+      0%, 45% { opacity: 0; transform: scale(0.96); }
+      48%, 95% { opacity: 1; transform: scale(1); }
+      98%, 100% { opacity: 0; transform: scale(0.96); }
+    }
+    @keyframes switchTagDev {
+      0%, 45% { opacity: 1; }
+      48%, 95% { opacity: 0; }
+      98%, 100% { opacity: 1; }
+    }
+    @keyframes switchTagLinux {
+      0%, 45% { opacity: 0; }
+      48%, 95% { opacity: 1; }
+      98%, 100% { opacity: 0; }
+    }
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes scanlineAnim {
+      0% { transform: translateY(-394px); }
+      100% { transform: translateY(394px); }
+    }
+    .dev-avatar {
+      animation: switchVisual 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-origin: 221px 260px;
+    }
+    .linux-tux {
+      animation: switchTux 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-origin: 221px 260px;
+    }
+    .tag-dev {
+      animation: switchTagDev 8s ease infinite;
+    }
+    .tag-linux {
+      animation: switchTagLinux 8s ease infinite;
+    }
+    .cursor {
+      animation: blinkCursor 1s step-end infinite;
+    }
+    .scanline {
+      animation: scanlineAnim 4s linear infinite;
+    }
+  </style>
+
+  <!-- Outer Canvas -->
+  <rect width="1080" height="520" rx="16" fill="#0A0F1D"/>
+
+  <!-- Terminal Window -->
+  <rect x="14" y="14" width="1052" height="492" rx="12" fill="#0D1527" stroke="#1F2E4D" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Window Header / Title Bar -->
+  <path d="M 14 56 L 1066 56" stroke="#1F2E4D" stroke-width="1.5"/>
+  <circle cx="38" cy="35" r="6.5" fill="#FF5F56"/>
+  <circle cx="59" cy="35" r="6.5" fill="#FFBD2E"/>
+  <circle cx="80" cy="35" r="6.5" fill="#27C93F"/>
+  <text x="540" y="40" text-anchor="middle" fill="#8A99AD" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="0.5">alejo@stack: ~/profile.yaml (vim)</text>
+
+  <!-- LEFT PANE: VISUAL / DYNAMIC CORE -->
+  <g clip-path="url(#leftClip)">
+    <rect x="36" y="80" width="370" height="394" rx="8" fill="#080E1C" stroke="#1F2E4D" stroke-width="1"/>
+    <rect x="36" y="80" width="370" height="394" fill="url(#grid)"/>
+
+    <!-- Header info in left pane -->
+    <path d="M 36 116 L 406 116" stroke="#1F2E4D" stroke-width="1"/>
+    <text x="50" y="103" fill="#00F0FF" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1">SYSTEM.VISUAL // CORE</text>
+    <text x="390" y="103" text-anchor="end" fill="#8A99AD" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">SYS_ID: 3413974</text>
+
+    <!-- Scanning line effect -->
+    <line x1="36" y1="80" x2="406" y2="80" stroke="#00F0FF" stroke-width="1.5" opacity="0.4" class="scanline"/>
+
+    <!-- VISUAL 1: DEVELOPER FACE / AVATAR WITH HEADPHONES & TECH GEAR -->
+    <g class="dev-avatar">
+      <!-- Glow Circle Background -->
+      <circle cx="221" cy="255" r="88" fill="#00F0FF" opacity="0.08"/>
+      <circle cx="221" cy="255" r="76" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+
+      <!-- Headphones Band -->
+      <path d="M 175 235 C 175 180, 267 180, 267 235" fill="none" stroke="#F78CA0" stroke-width="6" stroke-linecap="round"/>
+      <rect x="168" y="222" width="14" height="32" rx="6" fill="#F78CA0"/>
+      <rect x="260" y="222" width="14" height="32" rx="6" fill="#F78CA0"/>
+
+      <!-- Hair & Head Base -->
+      <path d="M 188 238 C 188 195, 254 195, 254 238 C 254 265, 235 285, 221 288 C 207 285, 188 265, 188 238 Z" fill="#1E293B" stroke="#00F0FF" stroke-width="2"/>
+      
+      <!-- Modern Hair Cut -->
+      <path d="M 186 225 C 195 200, 235 190, 256 210 C 250 200, 232 195, 215 198 C 198 202, 190 215, 186 225 Z" fill="#00F0FF"/>
+
+      <!-- Glasses / Smart Visor -->
+      <rect x="193" y="230" width="23" height="15" rx="3" fill="#00F0FF" opacity="0.25" stroke="#00F0FF" stroke-width="1.5"/>
+      <rect x="226" y="230" width="23" height="15" rx="3" fill="#00F0FF" opacity="0.25" stroke="#00F0FF" stroke-width="1.5"/>
+      <line x1="216" y1="237" x2="226" y2="237" stroke="#00F0FF" stroke-width="1.5"/>
+      <!-- Eyes / Glint -->
+      <circle cx="204" cy="237" r="2.5" fill="#FFFFFF"/>
+      <circle cx="237" cy="237" r="2.5" fill="#FFFFFF"/>
+
+      <!-- Smile / Confidence -->
+      <path d="M 213 262 Q 221 268 229 262" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Developer Hoodie / Shoulders -->
+      <path d="M 172 320 C 172 295, 195 288, 221 288 C 247 288, 270 295, 270 320 Z" fill="#152033" stroke="#00F0FF" stroke-width="2"/>
+      <path d="M 207 288 L 221 315 L 235 288" fill="none" stroke="#F78CA0" stroke-width="1.5"/>
+
+      <!-- Orbiting Tech Nodes -->
+      <circle cx="160" cy="205" r="4" fill="#00F0FF"/>
+      <line x1="160" y1="205" x2="185" y2="220" stroke="#00F0FF" stroke-width="1" stroke-dasharray="2 2" opacity="0.6"/>
+      <circle cx="282" cy="205" r="4" fill="#F78CA0"/>
+      <line x1="282" y1="205" x2="257" y2="220" stroke="#F78CA0" stroke-width="1" stroke-dasharray="2 2" opacity="0.6"/>
+    </g>
+
+    <!-- VISUAL 2: ICONIC LINUX TUX (PENGUIN) -->
+    <g class="linux-tux">
+      <!-- Glow Circle Background -->
+      <circle cx="221" cy="255" r="88" fill="#FFD166" opacity="0.08"/>
+      <circle cx="221" cy="255" r="76" fill="none" stroke="#FFD166" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+
+      <!-- Tux Body (Black/Dark outer) -->
+      <path d="M 221 190 C 200 190, 185 208, 188 238 C 182 250, 172 278, 172 300 C 172 320, 190 324, 221 324 C 252 324, 270 320, 270 300 C 270 278, 260 250, 254 238 C 257 208, 242 190, 221 190 Z" fill="#0B0F19" stroke="#38BDF8" stroke-width="2"/>
+
+      <!-- Tux Belly (White / Cream) -->
+      <path d="M 221 230 C 204 230, 194 250, 194 278 C 194 306, 206 318, 221 318 C 236 318, 248 306, 248 278 C 248 250, 238 230, 221 230 Z" fill="#F8FAFC"/>
+
+      <!-- Tux Eyes -->
+      <ellipse cx="212" cy="214" rx="5" ry="7" fill="#FFFFFF"/>
+      <ellipse cx="230" cy="214" rx="5" ry="7" fill="#FFFFFF"/>
+      <circle cx="213" cy="214" r="2.5" fill="#0F172A"/>
+      <circle cx="229" cy="214" r="2.5" fill="#0F172A"/>
+
+      <!-- Tux Beak (Yellow/Orange) -->
+      <path d="M 210 223 C 210 223, 221 235, 232 223 C 230 231, 225 236, 221 236 C 217 236, 212 231, 210 223 Z" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+
+      <!-- Tux Flippers (Wings) -->
+      <path d="M 186 250 C 174 260, 166 280, 168 296 C 172 298, 178 288, 184 275 Z" fill="#0B0F19" stroke="#38BDF8" stroke-width="1.5"/>
+      <path d="M 256 250 C 268 260, 276 280, 274 296 C 270 298, 264 288, 258 275 Z" fill="#0B0F19" stroke="#38BDF8" stroke-width="1.5"/>
+
+      <!-- Tux Feet (Orange) -->
+      <ellipse cx="196" cy="323" rx="15" ry="7" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+      <ellipse cx="246" cy="323" rx="15" ry="7" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+    </g>
+
+    <!-- Bottom Status in Left Box -->
+    <path d="M 36 438 L 406 438" stroke="#1F2E4D" stroke-width="1"/>
+    <!-- Animated labels for status -->
+    <g class="tag-dev">
+      <text x="50" y="458" fill="#00F0FF" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">● IDENTITY: FULL_STACK_DEV</text>
+      <text x="390" y="458" text-anchor="end" fill="#8A99AD" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">ALEJO | STACK</text>
+    </g>
+    <g class="tag-linux">
+      <text x="50" y="458" fill="#FFD166" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">◆ SYSTEM: LINUX_KERNEL_x64</text>
+      <text x="390" y="458" text-anchor="end" fill="#8A99AD" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">OPEN_SOURCE</text>
+    </g>
+  </g>
+
+  <!-- RIGHT PANE: VIM / CODE EDITOR -->
+  <g transform="translate(426, 80)">
+    <!-- Line numbers & code block -->
+    <g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" letter-spacing="0.3">
+      
+      <!-- Line 1 -->
+      <text x="0" y="24" fill="#4B5563" text-anchor="end" width="24">1</text>
+      <text x="18" y="24" fill="#38BDF8" font-weight="700">profile:</text>
+
+      <!-- Line 2 -->
+      <text x="0" y="46" fill="#4B5563" text-anchor="end">2</text>
+      <text x="34" y="46"><tspan fill="#F78CA0">subject:</tspan> <tspan fill="#E2E8F0" font-weight="600">"Edwin Alejandro Esquivel"</tspan></text>
+
+      <!-- Line 3 -->
+      <text x="0" y="68" fill="#4B5563" text-anchor="end">3</text>
+      <text x="34" y="68"><tspan fill="#F78CA0">alias:</tspan> <tspan fill="#E2E8F0">"Alejo | Stack"</tspan></text>
+
+      <!-- Line 4 -->
+      <text x="0" y="90" fill="#4B5563" text-anchor="end">4</text>
+      <text x="34" y="90"><tspan fill="#F78CA0">role:</tspan> <tspan fill="#34D399" font-weight="600">"Full-Stack Software Developer"</tspan></text>
+
+      <!-- Line 5 -->
+      <text x="0" y="112" fill="#4B5563" text-anchor="end">5</text>
+      <text x="34" y="112"><tspan fill="#F78CA0">education:</tspan> <tspan fill="#E2E8F0">"SENA ADSO · Ficha 3413974"</tspan></text>
+
+      <!-- Line 6 -->
+      <text x="0" y="134" fill="#4B5563" text-anchor="end">6</text>
+      <text x="34" y="134"><tspan fill="#F78CA0">location:</tspan> <tspan fill="#E2E8F0">"Neiva, Huila · Colombia 🇨🇴"</tspan></text>
+
+      <!-- Line 7 -->
+      <text x="0" y="156" fill="#4B5563" text-anchor="end">7</text>
+      <text x="34" y="156"><tspan fill="#F78CA0">mission:</tspan> <tspan fill="#34D399">"Transformar ideas en soluciones escalables"</tspan></text>
+
+      <!-- Line 8 -->
+      <text x="0" y="178" fill="#4B5563" text-anchor="end">8</text>
+
+      <!-- Line 9 -->
+      <text x="0" y="200" fill="#4B5563" text-anchor="end">9</text>
+      <text x="18" y="200" fill="#38BDF8" font-weight="700">stack:</text>
+
+      <!-- Line 10 -->
+      <text x="0" y="222" fill="#4B5563" text-anchor="end">10</text>
+      <text x="34" y="222"><tspan fill="#00F0FF">languages:</tspan> <tspan fill="#E2E8F0">[TypeScript, JavaScript, PHP, Go, SQL]</tspan></text>
+
+      <!-- Line 11 -->
+      <text x="0" y="244" fill="#4B5563" text-anchor="end">11</text>
+      <text x="34" y="244"><tspan fill="#00F0FF">frontend:</tspan> <tspan fill="#E2E8F0">[React, Next.js, TailwindCSS, Three.js]</tspan></text>
+
+      <!-- Line 12 -->
+      <text x="0" y="266" fill="#4B5563" text-anchor="end">12</text>
+      <text x="34" y="266"><tspan fill="#00F0FF">backend:</tspan> <tspan fill="#E2E8F0">[Laravel, Node.js, Express, REST APIs]</tspan></text>
+
+      <!-- Line 13 -->
+      <text x="0" y="288" fill="#4B5563" text-anchor="end">13</text>
+      <text x="34" y="288"><tspan fill="#00F0FF">databases:</tspan> <tspan fill="#E2E8F0">[MySQL, PostgreSQL]</tspan></text>
+
+      <!-- Line 14 -->
+      <text x="0" y="310" fill="#4B5563" text-anchor="end">14</text>
+      <text x="34" y="310"><tspan fill="#00F0FF">cloud_devops:</tspan> <tspan fill="#E2E8F0">[Vercel, Docker, Git, GitHub, Linux]</tspan></text>
+
+      <!-- Line 15 -->
+      <text x="0" y="332" fill="#4B5563" text-anchor="end">15</text>
+      <text x="18" y="332" fill="#38BDF8" font-weight="700">flagship_projects:</text>
+
+      <!-- Line 16 -->
+      <text x="0" y="354" fill="#4B5563" text-anchor="end">16</text>
+      <text x="34" y="354"><tspan fill="#FFD166">featured:</tspan> <tspan fill="#E2E8F0">[MercaGo, Asistencia-SENA, TrazaCao]</tspan><tspan fill="#00F0FF" class="cursor"> █</tspan></text>
+
+    </g>
+
+    <!-- Vim Statusline -->
+    <g transform="translate(0, 372)">
+      <rect x="0" y="0" width="620" height="22" rx="4" fill="#1E293B"/>
+      <text x="10" y="15" fill="#00F0FF" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10.5" font-weight="700">-- NORMAL --</text>
+      <text x="110" y="15" fill="#94A3B8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10.5">profile.yaml</text>
+      <text x="610" y="15" text-anchor="end" fill="#94A3B8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10.5">16L, 512B · utf-8 · [yaml]</text>
+    </g>
+  </g>
+</svg>
