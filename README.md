@@ -64,7 +64,7 @@ Apasionado por la innovación y los desafíos de alto impacto, participo activam
   <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok">
 </a>&nbsp;&nbsp;
 <a href="https://copycaess.com/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-818CF8?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio Web">
+  <img src="https://img.shields.io/badge/Pagina_Web-818CF8?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Página Web">
 </a>
 
 </div>
@@ -189,22 +189,16 @@ Apasionado por la innovación y los desafíos de alto impacto, participo activam
   <tr>
     <td valign="middle" align="center">
       <a href="https://github.com/edwin-esquivel-ADSO">
-        <img src="https://streak-stats.demolab.com?user=edwin-esquivel-ADSO&theme=tokyonight&hide_border=true&border_radius=8" alt="GitHub Streak" />
+        <img src="https://streak-stats.demolab.com?user=edwin-esquivel-ADSO&theme=default&hide_border=true&border_radius=8" alt="GitHub Streak" />
       </a>
     </td>
     <td valign="middle" align="center">
       <a href="https://github.com/edwin-esquivel-ADSO">
-        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=edwin-esquivel-ADSO&layout=compact&theme=tokyonight&hide_border=true&border_radius=8" alt="Top Languages" />
+        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=edwin-esquivel-ADSO&layout=compact&theme=default&hide_border=true&border_radius=8" alt="Top Languages" />
       </a>
     </td>
   </tr>
 </table>
-
-<br>
-
-<a href="https://github.com/edwin-esquivel-ADSO">
-  <img src="https://ghchart.rshah.org/818cf8/edwin-esquivel-ADSO" alt="Edwin's Interactive Github Heatmap" width="100%" />
-</a>
 
 </div>
 
