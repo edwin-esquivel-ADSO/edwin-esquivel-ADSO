@@ -189,7 +189,7 @@ Apasionado por la innovación y los desafíos de alto impacto, participo activam
   <tr>
     <td valign="middle" align="center">
       <a href="https://github.com/edwin-esquivel-ADSO">
-        <img src="https://streak-stats.demolab.com?user=edwin-esquivel-ADSO&theme=default&hide_border=true&border_radius=8" alt="GitHub Streak" />
+        <img src="https://streak-stats.demolab.com?user=edwin-esquivel-ADSO&theme=default&hide_border=true&border_radius=8&timezone=America%2FBogota" alt="GitHub Streak" />
       </a>
     </td>
     <td valign="middle" align="center">
