@@ -14,7 +14,7 @@
     <rect class='card' x='2' y='2' width='396' height='210'/>
     
     <text class='label' x='24' y='32'>LAST 12 MONTHS</text>
-    <text class='number' x='24' y='76'>109</text>
+    <text class='number' x='24' y='76'>110</text>
     <text class='subtext' x='24' y='96'>contributions</text>
     
     <!-- Stats Grid -->
@@ -23,11 +23,11 @@
       <text class='stat-val' x='170' y='0'>2 <tspan class='stat-label'>pull requests</tspan></text>
       
       <text class='stat-val' x='0' y='26'>0 <tspan class='stat-label'>code reviews</tspan></text>
-      <text class='stat-val' x='170' y='26'>0 <tspan class='stat-label'>issues</tspan></text>
+      <text class='stat-val' x='170' y='26'>1 <tspan class='stat-label'>issues</tspan></text>
     </g>
 
     <!-- Footer line -->
-    <text class='footer' x='24' y='188'>109 en repositorios · Activo en ADSO SENA</text>
+    <text class='footer' x='24' y='188'>110 en repositorios · Activo en ADSO SENA</text>
   </g>
 
   <!-- CARD 2: CONSISTENCY -->
@@ -38,9 +38,9 @@
     <text class='number' x='24' y='76'>5 days</text>
     <text class='subtext' x='24' y='96'>current streak</text>
     <g transform='translate(170, 78)'>
-         <rect width='105' height='22' rx='11' fill='#ecfdf5' stroke='#a7f3d0' stroke-width='1'/>
-         <circle cx='12' cy='11' r='4' fill='#10b981'/>
-         <text x='24' y='15' fill='#047857' font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size='11' font-weight='600'>Activo hoy 🔥</text>
+         <rect width='120' height='22' rx='11' fill='#fefce8' stroke='#fde047' stroke-width='1'/>
+         <circle cx='12' cy='11' r='4' fill='#eab308'/>
+         <text x='24' y='15' fill='#a16207' font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size='11' font-weight='600'>Pendiente hoy ⏳</text>
        </g>
     
     <!-- Consistency Stats -->
@@ -81,7 +81,7 @@
       <rect x='317' y='158' width='7' height='27' rx='2' fill='#0f766e'/>
       <rect x='328' y='164' width='7' height='21' rx='2' fill='#0f766e'/>
       <rect x='339' y='170' width='7' height='15' rx='2' fill='#0d9488'/>
-      <rect x='350' y='173' width='7' height='12' rx='2' fill='#0d9488'/>
+      <rect x='350' y='170' width='7' height='15' rx='2' fill='#0d9488'/>
       <rect x='361' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
     </g>
   </g>
