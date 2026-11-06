@@ -1,0 +1,42 @@
+name: Update GitHub Activity & Consistency Stats
+
+on:
+  schedule:
+    # Run every 4 hours automatically
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/generate-activity.js'
+      - '.github/workflows/update-activity.yml'
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate Activity SVG
+        run: node scripts/generate-activity.js
+
+      - name: Commit & Push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-activity.svg
+          if git diff --staged --quiet; then
+            echo "No changes in activity SVG"
+          else
+            git commit -m "chore(stats): update activity and consistency metrics [skip ci]"
+            git push origin main
+          fi

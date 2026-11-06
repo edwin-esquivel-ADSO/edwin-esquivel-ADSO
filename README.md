@@ -184,22 +184,17 @@ Apasionado por la innovación y los desafíos de alto impacto, participo activam
 ## 📈 `$ git log --activity --consistency`
 
 <div align="center">
+  <a href="https://github.com/edwin-esquivel-ADSO">
+    <img src="./assets/github-activity.svg" alt="GitHub Activity & Consistency" width="100%" />
+  </a>
+</div>
 
-<table border="0">
-  <tr>
-    <td valign="middle" align="center">
-      <a href="https://github.com/edwin-esquivel-ADSO">
-        <img src="https://streak-stats.demolab.com?user=edwin-esquivel-ADSO&theme=default&hide_border=true&border_radius=8&timezone=America%2FBogota" alt="GitHub Streak" />
-      </a>
-    </td>
-    <td valign="middle" align="center">
-      <a href="https://github.com/edwin-esquivel-ADSO">
-        <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=edwin-esquivel-ADSO&layout=compact&theme=default&hide_border=true&border_radius=8" alt="Top Languages" />
-      </a>
-    </td>
-  </tr>
-</table>
+<br>
 
+<div align="center">
+  <a href="https://github.com/edwin-esquivel-ADSO">
+    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=edwin-esquivel-ADSO&layout=compact&theme=default&hide_border=true&border_radius=8" alt="Top Languages" />
+  </a>
 </div>
 
 <br><br>
