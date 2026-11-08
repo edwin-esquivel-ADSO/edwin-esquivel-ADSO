@@ -14,12 +14,12 @@
     <rect class='card' x='2' y='2' width='396' height='210'/>
     
     <text class='label' x='24' y='32'>LAST 12 MONTHS</text>
-    <text class='number' x='24' y='76'>0</text>
+    <text class='number' x='24' y='76'>113</text>
     <text class='subtext' x='24' y='96'>contributions</text>
     
     <!-- Stats Grid -->
     <g transform='translate(24, 126)'>
-      <text class='stat-val' x='0' y='0'>0 <tspan class='stat-label'>commits</tspan></text>
+      <text class='stat-val' x='0' y='0'>110 <tspan class='stat-label'>commits</tspan></text>
       <text class='stat-val' x='170' y='0'>2 <tspan class='stat-label'>pull requests</tspan></text>
       
       <text class='stat-val' x='0' y='26'>0 <tspan class='stat-label'>code reviews</tspan></text>
@@ -27,7 +27,7 @@
     </g>
 
     <!-- Footer line -->
-    <text class='footer' x='24' y='188'>0 en repositorios · Activo en ADSO SENA</text>
+    <text class='footer' x='24' y='188'>113 en repositorios · Activo en ADSO SENA</text>
   </g>
 
   <!-- CARD 2: CONSISTENCY -->
@@ -45,13 +45,44 @@
     
     <!-- Consistency Stats -->
     <g transform='translate(24, 126)'>
-      <text class='stat-val' x='0' y='0'>0 <tspan class='stat-label'>longest in 12 months</tspan></text>
-      <text class='stat-val' x='190' y='0'>0 <tspan class='stat-label'>active days</tspan></text>
+      <text class='stat-val' x='0' y='0'>6 <tspan class='stat-label'>longest in 12 months</tspan></text>
+      <text class='stat-val' x='190' y='0'>23 <tspan class='stat-label'>active days</tspan></text>
     </g>
 
     <!-- Mini Sparkline / Activity bar -->
     <g transform='translate(4, 5)'>
-      
+      <rect x='20' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='31' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='42' y='158' width='7' height='27' rx='2' fill='#0f766e'/>
+      <rect x='53' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='64' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='75' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='86' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='97' y='170' width='7' height='15' rx='2' fill='#0d9488'/>
+      <rect x='108' y='153' width='7' height='32' rx='2' fill='#0f766e'/>
+      <rect x='119' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='130' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='141' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='152' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='163' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='174' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='185' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='196' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='207' y='176' width='7' height='9' rx='2' fill='#14b8a6'/>
+      <rect x='218' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='229' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='240' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='251' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='262' y='164' width='7' height='21' rx='2' fill='#0f766e'/>
+      <rect x='273' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='284' y='153' width='7' height='32' rx='2' fill='#0f766e'/>
+      <rect x='295' y='158' width='7' height='27' rx='2' fill='#0f766e'/>
+      <rect x='306' y='164' width='7' height='21' rx='2' fill='#0f766e'/>
+      <rect x='317' y='170' width='7' height='15' rx='2' fill='#0d9488'/>
+      <rect x='328' y='170' width='7' height='15' rx='2' fill='#0d9488'/>
+      <rect x='339' y='170' width='7' height='15' rx='2' fill='#0d9488'/>
+      <rect x='350' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='361' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
     </g>
   </g>
 </svg>
