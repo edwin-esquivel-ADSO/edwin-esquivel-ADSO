@@ -14,12 +14,12 @@
     <rect class='card' x='2' y='2' width='396' height='210'/>
     
     <text class='label' x='24' y='32'>LAST 12 MONTHS</text>
-    <text class='number' x='24' y='76'>118</text>
+    <text class='number' x='24' y='76'>119</text>
     <text class='subtext' x='24' y='96'>contributions</text>
     
     <!-- Stats Grid -->
     <g transform='translate(24, 126)'>
-      <text class='stat-val' x='0' y='0'>115 <tspan class='stat-label'>commits</tspan></text>
+      <text class='stat-val' x='0' y='0'>116 <tspan class='stat-label'>commits</tspan></text>
       <text class='stat-val' x='170' y='0'>2 <tspan class='stat-label'>pull requests</tspan></text>
       
       <text class='stat-val' x='0' y='26'>0 <tspan class='stat-label'>code reviews</tspan></text>
@@ -27,7 +27,7 @@
     </g>
 
     <!-- Footer line -->
-    <text class='footer' x='24' y='188'>118 en repositorios · Activo en ADSO SENA</text>
+    <text class='footer' x='24' y='188'>119 en repositorios · Activo en ADSO SENA</text>
   </g>
 
   <!-- CARD 2: CONSISTENCY -->
@@ -35,18 +35,18 @@
     <rect class='card' x='2' y='2' width='396' height='210'/>
     
     <text class='label' x='24' y='32'>CONSISTENCY</text>
-    <text class='number' x='24' y='76'>2 days</text>
+    <text class='number' x='24' y='76'>3 days</text>
     <text class='subtext' x='24' y='96'>current streak</text>
     <g transform='translate(170, 78)'>
-         <rect width='120' height='22' rx='11' fill='#fefce8' stroke='#fde047' stroke-width='1'/>
-         <circle cx='12' cy='11' r='4' fill='#eab308'/>
-         <text x='24' y='15' fill='#a16207' font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size='11' font-weight='600'>Pendiente hoy ⏳</text>
+         <rect width='105' height='22' rx='11' fill='#ecfdf5' stroke='#a7f3d0' stroke-width='1'/>
+         <circle cx='12' cy='11' r='4' fill='#10b981'/>
+         <text x='24' y='15' fill='#047857' font-family='-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif' font-size='11' font-weight='600'>Activo hoy 🔥</text>
        </g>
     
     <!-- Consistency Stats -->
     <g transform='translate(24, 126)'>
       <text class='stat-val' x='0' y='0'>6 <tspan class='stat-label'>longest in 12 months</tspan></text>
-      <text class='stat-val' x='190' y='0'>25 <tspan class='stat-label'>active days</tspan></text>
+      <text class='stat-val' x='190' y='0'>26 <tspan class='stat-label'>active days</tspan></text>
     </g>
 
     <!-- Mini Sparkline / Activity bar -->
@@ -82,7 +82,7 @@
       <rect x='328' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
       <rect x='339' y='176' width='7' height='9' rx='2' fill='#14b8a6'/>
       <rect x='350' y='167' width='7' height='18' rx='2' fill='#0d9488'/>
-      <rect x='361' y='182' width='7' height='3' rx='2' fill='#e2e8f0'/>
+      <rect x='361' y='176' width='7' height='9' rx='2' fill='#14b8a6'/>
     </g>
   </g>
 </svg>
