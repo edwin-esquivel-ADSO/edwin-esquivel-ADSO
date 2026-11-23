@@ -35,7 +35,7 @@
     <rect class='card' x='2' y='2' width='396' height='210'/>
     
     <text class='label' x='24' y='32'>CONSISTENCY</text>
-    <text class='number' x='24' y='76'>5 days</text>
+    <text class='number' x='24' y='76'>0 days</text>
     <text class='subtext' x='24' y='96'>current streak</text>
     <g transform='translate(170, 78)'>
          <rect width='120' height='22' rx='11' fill='#fefce8' stroke='#fde047' stroke-width='1'/>
